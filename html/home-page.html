@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="../css/project.css">
+  <link rel="stylesheet" href="../css/projects-aside.css">
+  <link rel="stylesheet" href="../css/project-divisor.css">
+  <link rel="stylesheet" href="../css/content-title.css">
+  <link rel="stylesheet" href="../css/carrossel.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/general-configuration.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body class="light-theme">
+  
+  <div id="mode-container">
+    <button id="light-dark-mode">
+      <img src="../images/icons/light-mode-icon.svg" alt="dark light theme icon" id="light-dark-icon" draggable="false">
+    </button>
+    <div class="tool-tip">
+      Light Mode
+    </div>
+  </div>
+  
+
+  <header>
+    <div class="header-main">
+      <div class="main-content-left">
+        <a class="logo-container" href="./home-page.html">
+          <img src="../images/logo-scan.webp" alt="Scanlator's logo" draggable="false" class="logo">
+          <span class="scanlator-name">Wind Scan</span>
+        </a>
+        
+        <ul class="list-nav">
+          <li class="page-nav">Início</li>
+          <li class="page-nav">Mangás</li>
+          <li class="page-nav">Novels</li>
+        </ul>
+      </div>
+      
+      <div class="main-content-right">
+        <div class="search-header">
+          <input type="text" class="search-header-input" placeholder="Pesquise kkkk">
+          <button class="search-header-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+              <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+            </svg>
+          </button>
+        </div> 
+        <a href="" class="specific-search" title="Pesquisa Específica, detalhada.....">Específico</a>
+      </div>
+      
+    </div>
+
+    <div class="header-sub">
+      <div class="sub-content-left">
+        <button class="button-mature" data-state = 'secure' title='Contéudo +18 Desativado'>
+          <span class="dot"></span>
+          <span>Mature Content</span>
+        </button>
+
+      </div>
+
+      <nav class="sub-content-center">
+        <ul>
+          <li class="genre">ACÃO</li>
+          <li class="genre">COMÉDIA</li>
+          <li class="genre">ROMANCE</li>
+          <li class="genre">DRAMA</li>
+          <li class="genre">SHOUJO</li>
+          <li class="genre">
+            <span class="more-genre" title="Click">MAIS</span>
+            <ul class="show-more-genres" inert data-state="close">
+              <li class="genre">Historico</li>
+              <li class="genre">Josei</li>
+              <li class="genre">Aventura</li>
+              <li class="genre">Magia</li>
+              <li class="genre">Sobrenatural</li>
+              <li class="genre">Reencarnação</li>
+              <li class="genre">Isekai</li>
+              <li class="genre">Shounen</li>
+              <li class="genre">Familia</li>
+              <li class="genre">Mistério</li>
+              <li class="genre">Psicológico</li>
+              <li class="genre">Seinen</li>
+              <li class="genre">Slice of Life</li>
+              <li class="genre">Tragedia</li>
+              <li class="genre">Harem</li>
+              <li class="genre">Horror</li>
+              <li class="genre">Adaptação</li>
+              <li class="genre">Time Travel</li>
+            </ul>
+
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sub-content-right">
+        <button class="acess-account">Login</button>
+        <button class="acess-account">Cadastrar</button>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <div class="main-content">
+      <div class="carrossel-container">
+
+       <div class="carrossel-img-container">
+        <img src="../images/carrossel-images/img-1.jpg" alt="obra em destaque" class="carrossel-img js-carrossel-img" draggable="false"> 
+        <!-- style="z-index: 4"> -->
+        <img src="../images/carrossel-images/img-2.jpg" alt="obra em destaque" class="carrossel-img" draggable="false"> 
+        <!-- style="z-index: 3; opacity:0;"> -->
+        <img src="../images/carrossel-images/img-3.jpg" alt="obra em destaque" class="carrossel-img" draggable="false"> 
+        <!-- style="z-index: 2; opacity:0;"> -->
+        <img src="../images/carrossel-images/img-4.jpg" alt="obra em destaque" class="carrossel-img" draggable="false"> 
+        <!-- style="z-index: 1; opacity:0;"> -->
+        <img src="../images/carrossel-images/img-5.jpg" alt="obra em destaque" class="carrossel-img" draggable="false"> 
+        <!-- style="z-index: 0; opacity:0;"> -->
+       </div>
+        
+        <div class="carrossel-arrow-container-one">
+          <svg class="carrossel-arrow" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+            <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/>
+          </svg>
+        </div>
+
+        <div class="carrossel-arrow-container-two">
+          <svg class="carrossel-arrow" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+            <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/>
+          </svg>
+        </div>
+      </div>  
+    
+      <!--Novos projetos lançados-->
+      <div class="projects">
+      
+        <div class="title">
+          Veja nossas novidades!
+        </div>
+      
+        <div class="project-grid">
+          <div class="project-container">
+            <div class="project-banner">
+              <img src="../images/banner.webp" alt="img do projeto" >
+            </div>
+            <div class="project-container-info">
+              <a class="project-name" title="Meccha Shoukan Sareta Ken (Tsugutoku)">Meccha Shoukan Sareta Ken (Tsugutoku)</a>
+              <a class="project-author" title="Pesquisar por Saitosa">Saitosa</a>
+              <div class="rating-container">
+                <div class="rating-img-container">
+                  <img src="../images/ratings/rating-50.png" alt="rating stars img">
+                </div>
+                <div class="rating-value-container">
+                  5
+                </div>
+        
+              </div>
+              <div class="chapters">
+                <div class="chapter-container">
+                  <a href="" class="chapter">Capítulo 1</a> <span class="new-chapter">NEW</span>
+                </div>
+        
+                <div class="chapter-container">
+                  <a href="" class="chapter">Capítulo 2</a> <span class="chapter-date">8 de março de 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="project-container">
+            <div class="project-banner">
+              <img src="../images/banner-2.webp" alt="img do projeto" >
+            </div>
+            <div class="project-container-info">
+              <a class="project-name" title="Meccha Shoukan Sareta Ken">Meccha Shoukan Sareta Ken</a>
+              <a class="project-author" title="Pesquisar por Saitosa">Saitosa</a>
+              <div class="rating-container">
+                <div class="rating-img-container">
+                  <img src="../images/ratings/rating-50.png" alt="rating stars img">
+                </div>
+                <div class="rating-value-container">
+                  5
+                </div>
+        
+              </div>
+              <div class="chapters">
+                <div class="chapter-container">
+                  <a href="" class="chapter">Capítulo 1</a> <span class="new-chapter">NEW</span>
+                </div>
+        
+                <div class="chapter-container">
+                  <a href="" class="chapter">Capítulo 2</a> <span class="new-chapter">NEW</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <hr class="project-divisor">
+      
+        <div class="project-grid">
+          <div class="project-container">
+            <div class="project-banner">
+              <img src="../images/banner-3.webp" alt="img do projeto" >
+            </div>
+            <div class="project-container-info">
+              <a class="project-name" title="Meccha Shoukan Sareta Ken (Tsugutoku) adsasd asdas dasd asd asd as dasdas">Meccha Shoukan Sareta Ken (Tsugutoku) adsasd asdas dasd asd asd as dasdas</a>
+              <a class="project-author" title="Pesquisar por Saitosa">Saitosa</a>
+              <div class="rating-container">
+                <div class="rating-img-container">
+                  <img src="../images/ratings/rating-50.png" alt="rating stars img">
+                </div>
+                <div class="rating-value-container">
+                  5
+                </div>
+        
+              </div>
+              <div class="chapters">
+                <div class="chapter-container">
+                  <a href="" class="chapter">Capítulo 1</a> <span class="new-chapter">NEW</span>
+                </div>
+        
+                <div class="chapter-container">
+                  <a href="" class="chapter">Capítulo 2</a> <span class="new-chapter">NEW</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="project-container">
+            <div class="project-banner">
+              <img src="../images/banner.webp" alt="img do projeto" >
+            </div>
+            <div class="project-container-info">
+              <a class="project-name" title="Meccha Shoukan Sareta Ken">Meccha Shoukan Sareta Ken</a>
+              <a class="project-author" title="Pesquisar por Saitosa">Saitosa</a>
+              <div class="rating-container">
+                <div class="rating-img-container">
+                  <img src="../images/ratings/rating-50.png" alt="rating stars img">
+                </div>
+                <div class="rating-value-container">
+                  5
+                </div>
+        
+              </div>
+              <div class="chapters">
+                <div class="chapter-container">
+                  <a href="" class="chapter">Capítulo 1</a> <span class="new-chapter">NEW</span>
+                </div>
+        
+                <div class="chapter-container">
+                  <a href="" class="chapter">Capítulo 2</a> <span class="new-chapter">NEW</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <hr class="project-divisor">
+      
+        <div class="project-grid">
+          <div class="project-container">
+            <div class="project-banner">
+              <img src="../images/banner-3.webp" alt="img do projeto" >
+            </div>
+            <div class="project-container-info">
+              <a class="project-name" title="Meccha Shoukan Sareta Ken (Tsugutoku) adsasd asdas dasd asd asd as dasdas">Meccha Shoukan Sareta Ken (Tsugutoku) adsasd asdas dasd asd asd as dasdas</a>
+              <a class="project-author" title="Pesquisar por Saitosa">Saitosa</a>
+              <div class="rating-container">
+                <div class="rating-img-container">
+                  <img src="../images/ratings/rating-50.png" alt="rating stars img">
+                </div>
+                <div class="rating-value-container">
+                  5
+                </div>
+        
+              </div>
+              <div class="chapters">
+                <div class="chapter-container">
+                  <a href="" class="chapter">Capítulo 1</a> <span class="new-chapter">NEW</span>
+                </div>
+        
+                <div class="chapter-container">
+                  <a href="" class="chapter">Capítulo 2</a> <span class="new-chapter">NEW</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="project-container">
+            <div class="project-banner">
+              <img src="../images/banner.webp" alt="img do projeto" >
+            </div>
+            <div class="project-container-info">
+              <div class="project-name" title="Meccha Shoukan Sareta Ken">Meccha Shoukan Sareta Ken</div>
+              <a class="project-author" title="Pesquisar por Saitosa">Saitosa</a>
+              <div class="rating-container">
+                <div class="rating-img-container">
+                  <img src="../images/ratings/rating-50.png" alt="rating stars img">
+                </div>
+                <div class="rating-value-container">
+                  5
+                </div>
+        
+              </div>
+              <div class="chapters">
+                <div class="chapter-container">
+                  <a href="" class="chapter">Capítulo 1</a> <span class="new-chapter">NEW</span>
+                </div>
+        
+                <div class="chapter-container">
+                  <a href="" class="chapter">Capítulo 2</a> <span class="new-chapter">NEW</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+       </div>
+    </div>
+  
+   <!-- Projetos mais visto -->
+    
+   <aside class="project-aside">
+
+
+   <div class="aside-top" style="display: none;">
+    <div class="search" >
+      <input type="text" placeholder="Pesquisar Obra...">
+      <img src="../images/icons/search-icon.svg" alt="">
+
+      <div class="tool-tip">
+        Pesquise...
+      </div>
+    </div>
+   </div>
+
+    <div class="title">Obras Mais Vistas</div>
+    <div class="aside-projects">
+      <div class="aside-project-container">
+        <div class="aside-project-banner">
+          <img src="../images/banner.webp" alt="img do projeto" >
+        </div>
+        <div class="aside-project-container-info">
+          <a class="project-name">Meccha Shoukan Sareta Ken (Tsugutoku)</a>
+          <div class="chapters">
+            <div class="chapter-container">
+              <a href="" class="chapter">Capítulo 1</a> <span class="new-chapter">NEW</span>
+            </div>
+    
+            <div class="chapter-container">
+              <a href="" class="chapter">Capítulo 2</a> <span class="chapter-date">8 de março de 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="project-divisor">
+
+      <div class="aside-project-container">
+        <div class="aside-project-banner">
+          <img src="../images/banner.webp" alt="img do projeto" >
+        </div>
+        <div class="aside-project-container-info">
+          <a class="project-name">Meccha Shoukan Sareta Ken (Tsugutoku)</a>
+          <div class="chapters">
+            <div class="chapter-container">
+              <a href="" class="chapter">Capítulo 1</a> <span class="new-chapter">NEW</span>
+            </div>
+    
+            <div class="chapter-container">
+              <a href="" class="chapter">Capítulo 2</a> <span class="chapter-date">8 de março de 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <hr class="project-divisor">
+
+      <div class="aside-project-container">
+        <div class="aside-project-banner">
+          <img src="../images/banner.webp" alt="img do projeto" >
+        </div>
+        <div class="aside-project-container-info">
+          <a class="project-name">Meccha Shoukan Sareta Ken (Tsugutoku) asdsad asdas dasd as dasdasd asd</a>
+          <div class="chapters">
+            <div class="chapter-container">
+              <a href="" class="chapter">Capítulo 1</a> <span class="new-chapter">NEW</span>
+            </div>
+    
+            <div class="chapter-container">
+              <a href="" class="chapter">Capítulo 2</a> <span class="chapter-date">8 de março de 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="project-divisor">
+
+      <div class="aside-project-container">
+        <div class="aside-project-banner">
+          <img src="../images/banner.webp" alt="img do projeto" >
+        </div>
+        <div class="aside-project-container-info">
+          <a class="project-name">Meccha Shoukan Sareta</a>
+          <div class="chapters">
+            <div class="chapter-container">
+              <a href="" class="chapter">Capítulo 1</a> <span class="new-chapter">NEW</span>
+            </div>
+    
+            <div class="chapter-container">
+              <a href="" class="chapter">Capítulo 2</a> <span class="chapter-date">8 de março de 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="button-all-projects">Todas As Obras</button>
+    </div>
+   </aside>  
+
+  </main>
+
+  <script src="../js/projectData.js"></script>
+  <script src="../js/carrossel.js"></script>
+  <script src="../js/headerModal.js"></script>
+  <script src='../js/secureContent.js'></script>
+  <script src="../js/lightDarkTheme.js"></script>
+</body>
+</html>

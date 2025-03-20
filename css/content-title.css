@@ -1,0 +1,8 @@
+.title{
+  font-size: larger;
+  font-weight: bolder;
+  color: var(--title-color);
+  text-align: center;
+  background-image: linear-gradient(to right,  transparent,rgb(53, 151, 53), green,rgb(22, 156, 22), transparent);
+  padding: 8px 0;
+}

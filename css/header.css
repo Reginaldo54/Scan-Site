@@ -1,0 +1,427 @@
+header{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  height: 93px;
+  z-index: 11;
+  box-shadow: 0 4px 12px 4px var(--box-shadow-primary-color);
+  
+}
+
+header ul
+{
+  display: flex;
+  column-gap: 15px;
+  list-style: none;
+
+}
+
+/* main content */
+.header-main{
+  background-color: var(--bg-color);
+  display: flex;
+  padding: .2rem 0;
+  justify-content: space-between;
+  
+  transition: color .5s ease-in-out, background-color .5s ease-in-out;
+}
+
+
+/* Main content Left */
+.main-content-left{
+  display: flex;
+  align-items: center;
+  column-gap: 35px;
+  padding-left: 102px;
+}
+
+/* Main content Right */
+.main-content-right{
+  
+  padding-right: 100px;
+  display: flex;
+  align-items: center;
+}
+
+/* Logo da scan */
+.logo-container{
+  
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  text-decoration: none;
+  column-gap: 5px;
+
+}
+
+.logo{
+  width: 65px;
+  transition: box-shadow .25s;
+}
+
+.logo-container::after
+{
+  content: '';
+  position: absolute;
+  top:120px;
+  left:120px;
+  border-radius: 255px;
+  background-image: linear-gradient(to right, rgb(159, 245, 46),green,green, rgb(159, 245, 46));
+  z-index: -1;
+  width: 0px;
+  height: 0px;
+  transition: width .55s ease, height .55s ease, top .25s ease-in-out, left .25s ease-in;
+}
+
+.logo-container:hover::after{
+  width: 66px;
+  height: 66px;
+  top:-1px;
+  left:-1px;
+  animation: spin 3s ease-in-out;
+}
+
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+ 100%{
+    transform: rotate(360deg);
+  }
+  
+}
+
+/* .logo-container > img:hover::after
+{
+  box-shadow: 0 0 5px 5px green;
+} */
+
+.scanlator-name{
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--scan-name-color);
+  
+}
+.logo-container:hover .scanlator-name
+{
+  color: rgb(43, 204, 2);
+}
+
+/* Navegação do header */
+
+.list-nav{
+  display: flex;
+  column-gap: 35px;
+}
+
+.page-nav{
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+  
+  display: flex;
+  justify-content: center;
+
+  color:var(--page-nav-color);
+  transition: color .15s, transform .15s;
+}
+
+.page-nav:hover
+{
+  color:var(--page-nav-hover);
+  transform: scale(1.05);
+}
+
+.page-nav::after
+{
+  content: '';
+  
+  position: absolute;
+  bottom: -3px;
+
+  background-color: rgb(13, 255, 53);
+
+  width: 0;
+  height: 4px;
+  border-radius: 25px;
+  transition: transform .35s, width .25s;
+}
+
+.page-nav:nth-child(1):hover::after
+{
+  width: 25px;
+  transform: scaleX(2);
+}
+.page-nav:nth-child(2):hover::after
+{
+  width: 35px;
+  transform: scaleX(2);
+}
+
+.page-nav:nth-child(3):hover::after
+{
+  width: 30px;
+  transform: scaleX(2);
+}
+
+
+
+/* Search Header */
+
+.search-header{
+  display: flex;
+  column-gap: 5px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.search-header:hover > .search-header-input,
+.search-header .search-header-input:focus
+{
+  width: 425px;
+  box-shadow: 0 0 5px 1px rgba(4, 223, 19, 0.719);
+}
+
+.search-header > .search-header-input{
+  outline: none;
+  border: none;
+  height: 2.4rem;
+  box-shadow: 0 0 0px 0px rgba(1, 58, 5, 0);
+  text-indent: 10px;
+  width: 0px;
+  border-radius: 7px;
+  transition: width .5s, box-shadow .5s;
+  background-color: var(--search-header-input-bg);
+  color: var(--text-color);
+}
+
+.search-header-button
+{
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: rgb(203, 245, 206);
+
+  transition: background-color .15s;
+}
+
+.search-header-button:hover{
+  background-color: rgb(189, 248, 189);
+}
+
+.search-header-button:hover > svg
+{
+  fill: green;
+}
+
+/* wc Search */
+.specific-search
+{
+  margin-left: 35px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: var( --page-nav-color);
+  transition: color .15s;
+}
+
+.specific-search:hover{
+  color: var(--page-nav-hover);
+}
+
+/* Sub content */
+.header-sub{
+  display: flex;
+  align-items: center;
+  background-color: var(--header-sub-bg);
+  
+  transition: color .5s ease-in-out, background-color .5s ease-in-out;
+}
+
+/* Sub content left */
+.sub-content-left{
+  padding-left: 100px;
+  padding-right: 15px;
+}
+
+/* Sub content center */
+.sub-content-center{
+  flex:1;
+}
+
+/* Sub content right */
+.sub-content-right
+{
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  padding-right: 100px;
+}
+
+
+/* Mature Content */
+@keyframes mature {
+  0%{
+    background-color: rgb(255, 0, 0);
+    color: var(--title-color);
+  }
+  50%{
+    color: var(--title-color);
+    background-color: rgb(0, 0, 0);
+  }
+  100%{
+    background-color: rgb(255, 0, 0);
+    color: var(--title-color);
+  }
+}
+
+@keyframes secure {
+  0%{
+    
+    background-color: rgb(3, 131, 24);
+    color: var(--title-color);
+  }
+  50%{
+    color: rgb(0, 0, 0);
+    background-color: var(--title-color);
+  }
+  100%{
+    background-color: rgb(5, 129, 26);
+    color: var(--title-color);
+  }
+}
+
+.button-mature{
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+
+  border: 1px solid black;
+  color: rgb(4, 119, 23);
+  padding: .3rem .6rem;
+  border-radius: 5px;
+  margin: 4px 0;
+
+  transition: background-color .15s, color .15s;
+
+  cursor: pointer;
+
+  animation: secure 2s infinite ease-in-out;
+ 
+}
+
+.button-mature:hover
+{
+  background-color: rgb(27, 189, 12);
+  color: rgb(231, 233, 231);
+}
+
+.dot{
+  background-color: rgba(10, 75, 1, 0.89);
+  width: 6px;
+  height: 6px;
+  border-radius: 124px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* estilazação dos generos */
+.genre{
+  cursor: pointer;
+  color: var(--text-color);
+  transition: color .15s;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.genre:hover{
+  color: var(--project-name-author-hover);
+}
+
+/* Ativar Modal */
+.more-genre{
+  position: relative;
+}
+
+.more-genre::after{
+  content: '';
+  position: absolute;
+  top: 26%;
+  right: -22px;
+  border-width: 5px 5px 5px 9px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--text-color);
+  transition: border-color .15s;
+}
+
+.more-genre:hover::after, 
+.genre:hover > .more-genre::after
+{
+  border-color: transparent transparent transparent rgb(78, 194, 10);
+}
+
+
+
+ /* Modal */
+.show-more-genres{
+  width: 750px;
+  padding: 1.5rem;
+  padding-left: 2.5rem;
+ 
+  position: absolute;
+  top: -224px;
+  left: 20%;
+
+  opacity: 0;
+  
+  background-color: var(--bg-color);
+  box-shadow: 0 0 5px 5px var(--box-shadow-secondary-color);
+  border-radius: 10px;
+
+  z-index: -1;
+  cursor: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 34px;
+  list-style: circle;
+  transition: top .25s, opacity .25s;
+}
+
+
+.show-more-genres > .genre
+{
+  font-size: 15px;
+}
+
+
+
+/* Button Login Cadastrar */
+.acess-account{
+  border: 1px solid rgb(12, 12, 12);
+  background-color: rgb(245, 239, 239);
+  color: rgb(5, 107, 12);
+  padding: .3rem .9rem;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: background-color .15s, color .15s, opacity .15s;
+  cursor: pointer;
+}
+
+.acess-account:hover{
+  background-color: rgb(12, 12, 12);
+  color: rgb(47, 211, 6);
+}
+
+.acess-account:active{
+  opacity: .75;
+}

@@ -1,0 +1,126 @@
+.carrossel-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:  25px;
+  z-index: 1;
+}
+
+
+
+
+@keyframes changeImgLeft {
+  0%{
+    transform: translateX(0);
+  }
+
+  100%
+  {
+    transform: translateX(-120%);
+  }
+}
+
+@keyframes changeImgRight {
+  0%{
+    transform: translateX(0);
+    z-index: -1;
+  }
+
+  100%
+  {
+    transform: translateX(120%);
+  }
+}
+
+@keyframes aparecendoImgNova {
+  0%{
+    transform: scale(0);
+
+  }
+  50%{
+    transform: scale(.8);
+    opacity: 1;
+  }
+  100%
+  {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.carrossel-img-container{ 
+  /* position: relative; */
+  user-select: none;
+  width: 698px;
+  height: 400px;
+  border-radius: 35px;
+  display: flex;
+  overflow: hidden;
+  border: none;
+  animation: shine 4s infinite;
+  transition: box-shadow .25s ease;
+}
+
+.carrossel-img {
+  /* position: absolute; */
+  user-select: none;
+  max-width: 698px;
+  max-height: 400px;
+  min-width: 698px;
+  min-height: 400px;
+  /* opacity:0;
+  transform: scale(0); */
+  transition: transform .5s, margin-left .5s;
+  
+  
+}
+
+/* .carrossel-img:hover{
+  
+  opacity:1;
+  transform: scale(1)
+} 
+ */
+
+.carrossel-arrow-container-one, 
+.carrossel-arrow-container-two {
+  display: flex;
+  justify-content: center;
+  border-radius: 255px;
+  position: absolute;
+  background-image: transparent;
+  padding: .6rem;
+  transition: background-color .35s;
+}
+
+.carrossel-arrow-container-one:hover,
+.carrossel-arrow-container-two:hover{
+  background-color:  rgba(16, 163, 16, 0.274);
+}
+
+.carrossel-arrow-container-one:active,
+.carrossel-arrow-container-two:active{
+  background-color:  rgba(13, 131, 13, 0.733);
+}
+
+.carrossel-arrow-container-one{
+  left: 12px;
+}
+
+.carrossel-arrow-container-two{
+ right:12px;
+}
+
+.carrossel-arrow-container-one .carrossel-arrow{
+  transform: rotate(180deg);
+}
+
+.carrossel-arrow{
+  cursor: pointer;
+  fill: var(--text-color);
+  width: 32px;
+  height: 32px;
+}
+
